@@ -38,12 +38,12 @@ const costLabel = document.getElementById("calculated-cost");
 function recalculate (duration) {
 	if (modelName == 'XYZ') {
 	total_cost = duration * XYZ_daily_cost;
-	costLabel.innerHTML = total_cost;
+	costLabel.innerHTML = total_cost.toFixed(2);
 	}
 
 	else if (modelName == 'CPRG') {
 	total_cost = duration * CPRG_daily_cost;
-	costLabel.innerHTML = total_cost;
+	costLabel.innerHTML = total_cost.toFixed(2);
 	}
 }
 
